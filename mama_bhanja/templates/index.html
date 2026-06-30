@@ -1,48 +1,43 @@
-{% extends "base.html" %}
-
+{% extends 'base.html' %}
 {% load static %}
+
+{% block title %}Home | Mama Bhanja Pvt. Ltd.{% endblock %}
 
 {% block content %}
 
-<!-- =========================
+<!-- =========================================
 HERO SECTION
-========================= -->
+========================================= -->
 
 <section class="hero-section">
-
     <div class="container">
-
         <div class="row align-items-center">
 
             <!-- Left Content -->
-
             <div class="col-lg-6">
 
                 <span class="hero-subtitle">
-                    Welcome to Mama Bhanja Pvt. Ltd.
+                    Welcome To Mama Bhanja Pvt. Ltd.
                 </span>
 
-                <h1>
-                    Building Dreams,
-                    <br>
-                    Creating Landmarks
+                <h1 class="hero-title">
+                    Find Your Perfect Plot
+                    <span>In Bihar</span>
                 </h1>
 
-                <p>
-                    Mama Bhanja Pvt. Ltd. is committed to delivering
-                    high-quality residential and commercial projects
-                    with trust, transparency, and excellence. We turn
-                    your vision into reality with innovative planning
-                    and premium construction.
+                <p class="hero-text">
+                    Invest in premium residential and commercial plots with
+                    complete transparency and trusted service. We help you
+                    secure your dream property at the best locations.
                 </p>
 
-                <div class="hero-btn">
+                <div class="hero-btns">
 
                     <a href="#" class="btn btn-primary-custom">
-                        Explore Projects
+                        Explore Plots
                     </a>
 
-                    <a href="#" class="btn btn-outline-custom">
+                    <a href="{% url 'contact' %}" class="btn btn-outline-custom">
                         Contact Us
                     </a>
 
@@ -55,8 +50,168 @@ HERO SECTION
             <div class="col-lg-6 text-center">
 
                 <img src="{% static 'images/hero.png' %}"
-                     alt="Construction"
-                     class="img-fluid hero-image">
+                     class="img-fluid hero-image"
+                     alt="Land Project">
+
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- =========================================
+ABOUT SECTION
+========================================= -->
+
+<section class="about-section">
+
+    <div class="container">
+
+        <div class="row align-items-center">
+
+            <div class="col-lg-6">
+
+                <img src="{% static 'images/about.jpg' %}"
+                     class="img-fluid rounded shadow"
+                     alt="About">
+
+            </div>
+
+            <div class="col-lg-6">
+
+                <span class="section-tag">
+                    About Us
+                </span>
+
+                <h2>
+                    Trusted Land Selling Company
+                </h2>
+
+                <p>
+
+                    Mama Bhanja Pvt. Ltd. is committed to providing premium
+                    residential and commercial plots with complete
+                    transparency, legal documentation, and customer
+                    satisfaction.
+
+                </p>
+
+                <ul class="about-list">
+
+                    <li>✔ Residential Plots</li>
+
+                    <li>✔ Commercial Plots</li>
+
+                    <li>✔ Prime Locations</li>
+
+                    <li>✔ Trusted Documentation</li>
+
+                </ul>
+
+                <a href="{% url 'about' %}"
+                   class="btn btn-primary-custom">
+
+                    Read More
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =========================================
+FEATURED PLOTS
+========================================= -->
+
+<section class="featured-plots">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <h2>Featured Plots</h2>
+
+            <p>
+                Explore our premium plots available in the best locations.
+            </p>
+
+        </div>
+
+        <div class="row">
+
+            <div class="col-md-4">
+
+                <div class="card shadow border-0">
+
+                    <img src="{% static 'images/plot1.jpg' %}" class="card-img-top">
+
+                    <div class="card-body">
+
+                        <h5>Residential Plot</h5>
+
+                        <p>Starting from ₹5 Lakhs</p>
+
+                        <a href="#" class="btn btn-primary-custom">
+
+                            View Details
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-4">
+
+                <div class="card shadow border-0">
+
+                    <img src="{% static 'images/plot2.jpg' %}" class="card-img-top">
+
+                    <div class="card-body">
+
+                        <h5>Commercial Plot</h5>
+
+                        <p>Starting from ₹12 Lakhs</p>
+
+                        <a href="#" class="btn btn-primary-custom">
+
+                            View Details
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-4">
+
+                <div class="card shadow border-0">
+
+                    <img src="{% static 'images/plot3.jpg' %}" class="card-img-top">
+
+                    <div class="card-body">
+
+                        <h5>Premium Plot</h5>
+
+                        <p>Starting from ₹18 Lakhs</p>
+
+                        <a href="#" class="btn btn-primary-custom">
+
+                            View Details
+
+                        </a>
+
+                    </div>
+
+                </div>
 
             </div>
 
