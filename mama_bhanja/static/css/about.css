@@ -1,0 +1,240 @@
+/*=====================================
+        ABOUT HERO SECTION
+======================================*/
+
+.about-hero{
+    background: linear-gradient(135deg,#0A2540,#1E5AA8);
+    padding:100px 0;
+    color:#fff;
+}
+
+.hero-tag{
+    display:inline-block;
+    background:#38BDF8;
+    color:#fff;
+    padding:10px 25px;
+    border-radius:50px;
+    font-size:15px;
+    font-weight:600;
+    margin-bottom:20px;
+}
+
+.about-hero h1{
+    font-size:55px;
+    font-weight:700;
+    line-height:1.3;
+    margin-bottom:25px;
+}
+
+.about-hero h1 span{
+    color:#38BDF8;
+}
+
+.about-hero p{
+    color:#dbeafe;
+    font-size:18px;
+    line-height:30px;
+}
+
+.about-hero img{
+    width:100%;
+    border-radius:20px;
+    transition:.4s;
+    box-shadow:0 20px 40px rgba(0,0,0,.2);
+}
+
+.about-hero img:hover{
+    transform:scale(1.03);
+}
+
+
+/*=====================================
+        ABOUT COMPANY
+======================================*/
+
+.about-section{
+    padding:90px 0;
+    background:#fff;
+}
+
+.about-section h6{
+    color:#38BDF8;
+    font-weight:700;
+    letter-spacing:2px;
+}
+
+.about-section h2{
+    color:#0A2540;
+    font-size:42px;
+    font-weight:700;
+    margin-bottom:25px;
+}
+
+.about-section p{
+    color:#6b7280;
+    line-height:30px;
+    font-size:16px;
+}
+
+.about-section img{
+    width:100%;
+    border-radius:20px;
+    box-shadow:0 15px 35px rgba(0,0,0,.1);
+}
+
+
+/*=====================================
+        FEATURE BOX
+======================================*/
+
+.about-feature{
+    display:flex;
+    align-items:flex-start;
+    margin-top:25px;
+}
+
+.about-feature i{
+    width:55px;
+    height:55px;
+    background:#38BDF8;
+    color:#fff;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:22px;
+    margin-right:15px;
+}
+
+.about-feature h5{
+    color:#0A2540;
+    font-weight:600;
+}
+
+.about-feature p{
+    margin:0;
+    color:#777;
+}
+
+
+/*=====================================
+        MISSION & VISION
+======================================*/
+
+.mission-section{
+    background:#F4FAFF;
+    padding:90px 0;
+}
+
+.mission-card{
+    background:#fff;
+    border-radius:18px;
+    padding:40px;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+    transition:.4s;
+    height:100%;
+}
+
+.mission-card:hover{
+    transform:translateY(-10px);
+}
+
+.mission-card i{
+    font-size:50px;
+    color:#38BDF8;
+    margin-bottom:20px;
+}
+
+.mission-card h3{
+    color:#0A2540;
+    font-weight:700;
+    margin-bottom:15px;
+}
+
+.mission-card p{
+    color:#6b7280;
+    line-height:28px;
+}
+
+
+/*=====================================
+        BUTTON
+======================================*/
+
+.btn-warning{
+    background:#38BDF8;
+    color:#fff;
+    border:none;
+    padding:14px 35px;
+    border-radius:50px;
+    font-weight:600;
+    transition:.4s;
+}
+
+.btn-warning:hover{
+    background:#0A2540;
+    color:#fff;
+}
+
+
+/*=====================================
+        RESPONSIVE
+======================================*/
+
+@media(max-width:991px){
+
+.about-hero{
+    text-align:center;
+    padding:70px 0;
+}
+
+.about-hero h1{
+    font-size:40px;
+}
+
+.about-hero img{
+    margin-top:40px;
+}
+
+.about-section h2{
+    font-size:34px;
+}
+
+}
+
+@media(max-width:768px){
+
+.about-hero h1{
+    font-size:32px;
+}
+
+.about-section,
+.mission-section{
+    padding:60px 0;
+}
+
+.about-section h2{
+    font-size:28px;
+}
+
+.mission-card{
+    margin-bottom:25px;
+}
+
+}
+
+@media(max-width:576px){
+
+.about-hero h1{
+    font-size:28px;
+}
+
+.hero-tag{
+    font-size:13px;
+}
+
+.btn-warning{
+    width:100%;
+}
+
+}

@@ -1,0 +1,146 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<!-- HERO -->
+<section class="career-hero">
+    <div class="container text-center">
+        <h1>Join Our Team</h1>
+        <p>Build your career with Mama Bhanja Construction</p>
+    </div>
+</section>
+
+
+<!-- WHY JOIN -->
+<section class="career-section">
+    <div class="container">
+
+        <div class="text-center mb-5">
+            <h6>CAREER</h6>
+            <h2>Why Work With Us</h2>
+        </div>
+
+        <div class="row g-4">
+
+            <div class="col-md-4">
+                <div class="career-box">
+                    <i class="fa-solid fa-helmet-safety"></i>
+                    <h4>Safe Work Environment</h4>
+                    <p>We ensure safety and professionalism at every project site.</p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="career-box">
+                    <i class="fa-solid fa-briefcase"></i>
+                    <h4>Growth Opportunities</h4>
+                    <p>Learn and grow with experienced engineers and architects.</p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="career-box">
+                    <i class="fa-solid fa-indian-rupee-sign"></i>
+                    <h4>Good Salary</h4>
+                    <p>We offer competitive salary and timely payments.</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+<!-- JOBS -->
+<section class="career-jobs">
+    <div class="container">
+
+        <div class="text-center mb-5">
+            <h2>Current Openings</h2>
+        </div>
+
+        <div class="row g-4">
+
+            <div class="col-md-6">
+                <div class="job-card">
+                    <h4>Site Engineer</h4>
+                    <p>Experience: 2-5 Years</p>
+                    <span>Location: Bihar</span>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="job-card">
+                    <h4>Architect</h4>
+                    <p>Experience: 1-3 Years</p>
+                    <span>Location: Patna</span>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+<!-- APPLY FORM -->
+<section class="career-form">
+    <div class="container">
+
+        <div class="text-center mb-4">
+            <h2>Apply Now</h2>
+        </div>
+
+        <div class="row justify-content-center">
+
+            <div class="col-lg-8">
+
+                <form>
+
+                    <div class="row g-3">
+
+                        <div class="col-md-6">
+                            <input type="text" class="form-control" placeholder="Your Name">
+                        </div>
+
+                        <div class="col-md-6">
+                            <input type="email" class="form-control" placeholder="Email">
+                        </div>
+
+                        <div class="col-md-6">
+                            <input type="text" class="form-control" placeholder="Phone">
+                        </div>
+
+                        <div class="col-md-6">
+                            <select class="form-control">
+                                <option>Select Position</option>
+                                <option>Site Engineer</option>
+                                <option>Architect</option>
+                                <option>Supervisor</option>
+                            </select>
+                        </div>
+
+                        <div class="col-12">
+                            <textarea class="form-control" rows="4" placeholder="Message"></textarea>
+                        </div>
+
+                        <div class="col-12 text-center">
+                            <button class="btn btn-career">
+                                Submit Application
+                            </button>
+                        </div>
+
+                    </div>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+{% endblock %}

@@ -1,0 +1,205 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<!-- =========================
+MODELS HERO
+========================= -->
+
+<section class="models-hero">
+
+    <div class="container text-center">
+
+        <h1>Our Models</h1>
+
+        <p>
+            Discover premium building designs and plot planning solutions
+            crafted with quality, innovation, and modern architecture.
+        </p>
+
+    </div>
+
+</section>
+
+<!-- =========================
+BUILDING MODELS
+========================= -->
+
+<section class="models-section">
+
+    <div class="container">
+
+        <div class="section-title text-center">
+
+            <h2>Building Models</h2>
+
+            <p>Choose from our modern residential and commercial building designs.</p>
+
+        </div>
+
+        <div class="row g-4">
+
+            <div class="col-lg-4 col-md-6">
+
+                <div class="model-card">
+
+                    <img src="{% static 'images/models/model1.jpg' %}" alt="">
+
+                    <div class="model-content">
+
+                        <h4>Luxury Villa</h4>
+
+                        <p>3 BHK Modern Villa with elegant elevation.</p>
+
+                        <a href="#" class="btn-model">
+                            View Details
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+
+                <div class="model-card">
+
+                    <img src="{% static 'images/models/model2.jpg' %}" alt="">
+
+                    <div class="model-content">
+
+                        <h4>Duplex House</h4>
+
+                        <p>Modern duplex design with spacious rooms.</p>
+
+                        <a href="#" class="btn-model">
+                            View Details
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+
+                <div class="model-card">
+
+                    <img src="{% static 'images/models/model3.jpg' %}" alt="">
+
+                    <div class="model-content">
+
+                        <h4>Commercial Complex</h4>
+
+                        <p>Premium commercial building architecture.</p>
+
+                        <a href="#" class="btn-model">
+                            View Details
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =========================
+PLOT MODELS
+========================= -->
+
+<section class="plot-section">
+
+    <div class="container">
+
+        <div class="section-title text-center">
+
+            <h2>Plot Models</h2>
+
+            <p>Smart layouts for residential and commercial plots.</p>
+
+        </div>
+
+        <div class="row g-4">
+
+            <div class="col-lg-4 col-md-6">
+
+                <div class="model-card">
+
+                    <img src="{% static 'images/models/plot1.jpg' %}" alt="">
+
+                    <div class="model-content">
+
+                        <h4>30 × 40 Plot</h4>
+
+                        <p>Perfect planning for compact family homes.</p>
+
+                        <a href="#" class="btn-model">
+                            View Details
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+
+                <div class="model-card">
+
+                    <img src="{% static 'images/models/plot2.jpg' %}" alt="">
+
+                    <div class="model-content">
+
+                        <h4>40 × 60 Plot</h4>
+
+                        <p>Spacious layout with parking and garden.</p>
+
+                        <a href="#" class="btn-model">
+                            View Details
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+
+                <div class="model-card">
+
+                    <img src="{% static 'images/models/plot3.jpg' %}" alt="">
+
+                    <div class="model-content">
+
+                        <h4>50 × 80 Plot</h4>
+
+                        <p>Luxury planning with premium architecture.</p>
+
+                        <a href="#" class="btn-model">
+                            View Details
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+{% endblock %}

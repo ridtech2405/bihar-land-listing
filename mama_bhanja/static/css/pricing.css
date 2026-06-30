@@ -1,0 +1,160 @@
+/*=========================
+PRICE HERO
+=========================*/
+
+.pricing-hero{
+
+    background:linear-gradient(135deg,#0A2540,#1E5AA8);
+    color:#fff;
+    padding:90px 0;
+
+}
+
+.pricing-hero h1{
+
+    font-size:50px;
+    font-weight:700;
+
+}
+
+.pricing-hero p{
+
+    color:#dbeafe;
+    font-size:18px;
+
+}
+
+/*=========================
+SECTION
+=========================*/
+
+.pricing-section{
+
+    padding:80px 0;
+    background:#F5FAFF;
+
+}
+
+/*=========================
+CARD
+=========================*/
+
+.price-card{
+
+    background:#fff;
+    border-radius:18px;
+    padding:40px 30px;
+    text-align:center;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+    position:relative;
+    transition:.4s;
+
+}
+
+.price-card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.price-card.active{
+
+    border:3px solid #38BDF8;
+
+}
+
+.popular{
+
+    position:absolute;
+    top:15px;
+    right:15px;
+    background:#38BDF8;
+    color:#fff;
+    padding:5px 15px;
+    border-radius:20px;
+    font-size:13px;
+
+}
+
+.price-card i{
+
+    font-size:45px;
+    color:#38BDF8;
+    margin-bottom:20px;
+
+}
+
+.price-card h3{
+
+    color:#0A2540;
+    font-weight:700;
+
+}
+
+.price-card h2{
+
+    color:#1E5AA8;
+    font-size:45px;
+    margin:20px 0 5px;
+
+}
+
+.price-card span{
+
+    color:#666;
+
+}
+
+.price-card ul{
+
+    list-style:none;
+    padding:0;
+    margin:30px 0;
+
+}
+
+.price-card ul li{
+
+    padding:10px 0;
+    color:#555;
+
+}
+
+.btn-price{
+
+    display:inline-block;
+    background:#38BDF8;
+    color:#fff;
+    padding:12px 35px;
+    border-radius:30px;
+    text-decoration:none;
+    transition:.3s;
+
+}
+
+.btn-price:hover{
+
+    background:#0A2540;
+    color:#fff;
+
+}
+
+/*=========================
+RESPONSIVE
+=========================*/
+
+@media(max-width:768px){
+
+.pricing-hero h1{
+
+font-size:36px;
+
+}
+
+.price-card{
+
+margin-bottom:30px;
+
+}
+
+}

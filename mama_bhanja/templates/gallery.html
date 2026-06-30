@@ -1,0 +1,137 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<!-- =========================
+GALLERY HERO
+========================= -->
+
+<section class="gallery-hero">
+
+    <div class="container text-center">
+
+        <h1>Our Gallery</h1>
+
+        <p>
+            Explore our completed projects, construction sites,
+            interiors and modern architectural designs.
+        </p>
+
+    </div>
+
+</section>
+
+<!-- =========================
+GALLERY
+========================= -->
+
+<section class="gallery-section">
+
+    <div class="container">
+
+        <div class="row g-4">
+
+            <div class="col-lg-4 col-md-6">
+
+                <div class="gallery-card">
+
+                    <img src="{% static 'images/gallery/gallery1.jpg' %}" alt="Gallery">
+
+                    <div class="gallery-overlay">
+
+                        <h5>Residential Project</h5>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+
+                <div class="gallery-card">
+
+                    <img src="{% static 'images/gallery/gallery2.jpg' %}" alt="Gallery">
+
+                    <div class="gallery-overlay">
+
+                        <h5>Commercial Building</h5>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+
+                <div class="gallery-card">
+
+                    <img src="{% static 'images/gallery/gallery3.jpg' %}" alt="Gallery">
+
+                    <div class="gallery-overlay">
+
+                        <h5>Luxury Villa</h5>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+
+                <div class="gallery-card">
+
+                    <img src="{% static 'images/gallery/gallery4.jpg' %}" alt="Gallery">
+
+                    <div class="gallery-overlay">
+
+                        <h5>Interior Design</h5>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+
+                <div class="gallery-card">
+
+                    <img src="{% static 'images/gallery/gallery5.jpg' %}" alt="Gallery">
+
+                    <div class="gallery-overlay">
+
+                        <h5>Modern Elevation</h5>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+
+                <div class="gallery-card">
+
+                    <img src="{% static 'images/gallery/gallery6.jpg' %}" alt="Gallery">
+
+                    <div class="gallery-overlay">
+
+                        <h5>Construction Site</h5>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+{% endblock %}

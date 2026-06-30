@@ -44,44 +44,49 @@ NAVBAR
     <div class="container">
 
         <!-- Logo -->
-
-        <a class="navbar-brand" href="#">
-
-            <img src="{% static 'images/image.png' %}" alt="Mama Bhanja Logo" class="site-logo">
-
+        <a class="navbar-brand" href="{% url 'home' %}">
+            <img src="{% static 'images/image.png' %}"
+                 alt="Mama Bhanja Logo"
+                 class="site-logo">
         </a>
 
-        <!-- Mobile Button -->
-
+        <!-- Mobile Toggle -->
         <button class="navbar-toggler"
                 type="button"
                 data-bs-toggle="collapse"
-                data-bs-target="#navbarMenu">
+                data-bs-target="#navbarMenu"
+                aria-controls="navbarMenu"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
 
             <span class="navbar-toggler-icon"></span>
 
         </button>
 
-        <!-- Menu -->
-
-        <div class="collapse navbar-collapse justify-content-end"
-             id="navbarMenu">
+        <!-- Navbar Menu -->
+        <div class="collapse navbar-collapse justify-content-end" id="navbarMenu">
 
             <ul class="navbar-nav align-items-lg-center">
 
                 <li class="nav-item">
-                    <a class="nav-link active" href="#">Home</a>
+                    <a class="nav-link active" href="{% url 'home' %}">
+                        Home
+                    </a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="#">About Us</a>
+                    <a class="nav-link" href="{% url 'about' %}">
+                        About Us
+                    </a>
                 </li>
 
                 <li class="nav-item dropdown">
 
                     <a class="nav-link dropdown-toggle"
                        href="#"
-                       data-bs-toggle="dropdown">
+                       role="button"
+                       data-bs-toggle="dropdown"
+                       aria-expanded="false">
 
                         Models
 
@@ -90,13 +95,13 @@ NAVBAR
                     <ul class="dropdown-menu">
 
                         <li>
-                            <a class="dropdown-item" href="#">
+                            <a class="dropdown-item" href="{% url 'models' %}">
                                 Building Models
                             </a>
                         </li>
 
                         <li>
-                            <a class="dropdown-item" href="#">
+                            <a class="dropdown-item" href="{% url 'models' %}">
                                 Plot Models
                             </a>
                         </li>
@@ -106,33 +111,39 @@ NAVBAR
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Projects</a>
+                    <a class="nav-link" href="{% url 'projects' %}">
+                        Projects
+                    </a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Gallery</a>
+                    <a class="nav-link" href="{% url 'gallery' %}">
+                        Gallery
+                    </a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Price List</a>
+                    <a class="nav-link" href="{% url 'pricing' %}">
+                        Price List
+                    </a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Career</a>
+                    <a class="nav-link" href="{% url 'career' %}">
+                        Career
+                    </a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
+                    <a class="nav-link" href="{% url 'contact' %}">
+                        Contact
+                    </a>
                 </li>
 
                 <li class="nav-item ms-lg-4">
-
-                    <a href="#" class="btn enquire-btn">
-
+                    <a href="{% url 'contact' %}" class="btn enquire-btn">
                         Get Quote
-
                     </a>
-
                 </li>
 
             </ul>
